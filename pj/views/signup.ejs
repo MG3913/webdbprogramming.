@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>회원가입</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .form-container {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-row {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="title">회원가입</h2>
+    <form action="process/signup" method="post">
+        <div class="form-row">
+            <label for="username">사용자 이름</label>
+            <input type="text" value="" name="username" id="username">
+        </div>
+        <div class="form-row">
+            <label for="pwd">비밀번호</label>
+            <input type="password" value="" name="pwd" id="pwd"> 
+        </div>
+        <div class="form-row">
+            <label for="cpwd">비밀번호 확인</label>
+            <input type="password" value="" name="cpwd" id="cpwd"> 
+        </div>
+        <div class="form-row">
+            <label for="email">이메일</label> 
+            <input type="email" value="" name="email" id="email">
+        </div>
+        <div class="form-row">
+            <input type="radio" name="gender" value="0" id="male" checked> <label for="male">남성</label>
+            <input type="radio" name="gender" value="1" id="female"> <label for="female">여성</label>
+        </div>
+        <button type="submit">회원가입</button>
+    </form>
+</body>
+</html>

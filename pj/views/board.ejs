@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>게시판</title>
+</head>
+<body>
+    <h1>게시판</h1>
+    <nav>
+        <% if (user) { %>
+            <a href="/write">글쓰기</a>
+        <% } %>
+    </nav>
+    <article>
+        <ul>
+            <% posts.forEach(post => { %>
+                <li>
+                    <a href="/post/<%= post.id %>"><%= post.title %></a>
+                </li>
+            <% }); %>
+        </ul>
+    </article>
+</body>
+</html>
